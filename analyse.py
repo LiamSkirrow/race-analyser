@@ -6,8 +6,13 @@ import argparse
 
 parser = argparse.ArgumentParser(description='Read racing arguments')
 parser.add_argument('racename')
+parser.add_argument('-f', '--format', required=True, help='the file format, one of CSV... TODO')
 
 args = parser.parse_args()
 
 if __name__ == "__main__":
     print("Analysing race: " + args.racename)
+    
+    
+
+
