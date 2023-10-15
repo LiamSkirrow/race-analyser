@@ -1,1 +1,2 @@
-races/
+races/*.csv
+races/*.xls
