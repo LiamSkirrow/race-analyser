@@ -14,11 +14,10 @@ args = parser.parse_args()
 
 if __name__ == "__main__":
     filename = args.racename + '.' + args.format
-    filepath = 'races/' + args.racename + '/' + filename
+    filepath = 'races/' + filename
     print('\nSearching for file: ' + filepath)
     race_data = pd.read_csv(filepath, encoding = "latin")
     print(race_data)
 
     # TODO: include the overall, men's, women's, etc... as separate CSV files. Easier to analyse
     
-    # print('\n*** Up to here ***\n')
