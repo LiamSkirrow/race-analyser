@@ -3,7 +3,7 @@
 
 import argparse
 import pandas as pd
-# import matplotlib as plot
+import matplotlib as plot
 
 parser = argparse.ArgumentParser(description='Read racing arguments')
 parser.add_argument('racename')
