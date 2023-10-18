@@ -3,7 +3,7 @@
 
 import argparse
 import pandas as pd
-import matplotlib as plot
+# import matplotlib as plot
 
 parser = argparse.ArgumentParser(description='Read racing arguments')
 parser.add_argument('racename')
@@ -16,8 +16,5 @@ if __name__ == "__main__":
     filename = args.racename + '.' + args.format
     filepath = 'races/' + filename
     print('\nSearching for file: ' + filepath)
-    race_data = pd.read_csv(filepath, encoding = "latin")
-    print(race_data)
-
-    # TODO: include the overall, men's, women's, etc... as separate CSV files. Easier to analyse
-    
+    race_data = pd.read_csv(filepath, encoding = "latin", skiprows=1)
+    print(race_data['Name'])
